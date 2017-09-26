@@ -193,8 +193,6 @@ Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
   var both = (arr1, arr2) => arr1.filter((elt) => arr2.includes(elt));
 
 
-
-
 //NEXT PROBLEM
 
 
@@ -230,7 +228,9 @@ var colt = {
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
-  //Code Here
+  devMountainEmployees.push(tyler, cahlan, ryan, colt)
+  console.log(devMountainEmployees.length);
+  
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
