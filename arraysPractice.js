@@ -160,7 +160,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 
 
-//Next Problem
+var addTen = (numbers) => numbers.map((number) => parseInt(number) + 10);
 
 
 
