@@ -92,9 +92,7 @@ var getRandomArbitrary = function() {
 
 // Your job is to write a function named finder that will get a random number (by invoking getRandomArbitrary), then loop through the array (that will be passed in as a parameter) to see if that random number is in the array. If it is, return true, if it's not, return false
 
-  //Code Here
-
-
+  var finder = (arr) => arr.includes(getRandomArbitrary())
 
 
 //Next Problem
@@ -116,7 +114,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   In both the removeItem function and the addItem function, you will also need to check for valid aurguments. Specrunner will try to call your functions without passing in valid aurguments. When this happens, you will need to respond by returning an empty array.
 */
 
-  //Code Here
+  var removeItem = (myGroceryList, item) => {
+    var itemIndex = myGroceryList.indexOf(item);
+    itemIndex >= 0 && myGroceryList.splice(itemIndex, 1);
+    return myGroceryList;
+  };
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
