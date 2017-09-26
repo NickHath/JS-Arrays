@@ -72,7 +72,13 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
 
-  //Code Here
+  var divider = (numbersArray) => {
+    var evens = [], odds = [];
+    for (var i = 0 ; i < numbersArray.length; i++) {
+      numbersArray[i] % 2 ? odds.push(numbersArray[i]) : evens.push(numbersArray[i]);
+    }
+    return [evens, odds];
+  };
 
 
 //Next Problem
