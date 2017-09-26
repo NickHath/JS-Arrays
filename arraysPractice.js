@@ -124,8 +124,8 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
     if (myGroceryList.constructor !== Array && typeof(item) !== "string") {
       return [];
     }
-    myGrocerylist.push(item);
-    return myGrocerylist;
+    myGroceryList.push(item);
+    return myGroceryList;
   };
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
